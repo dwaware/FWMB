@@ -29,13 +29,13 @@ public class CameraController : MonoBehaviour
         {
             speed = 0;
         }
-        if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow)))
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.RotateAround(transform.position, transform.forward, 0.1f);
+            transform.RotateAround(transform.position, transform.up, -0.1f);
         }
-        if (Input.GetKey(KeyCode.D) || (Input.GetKey(KeyCode.RightArrow)))
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.RotateAround(transform.position, transform.forward, -0.1f);
+            transform.RotateAround(transform.position, transform.up, 0.1f);
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
@@ -52,29 +52,6 @@ public class CameraController : MonoBehaviour
             {
                 speed = min_speed;
             }
-        }
-        if (Input.GetMouseButton(1))  // use rmb to rotate view
-        {
-            if (Input.GetAxis("Mouse X") > 0)
-            {
-                transform.RotateAround(transform.position, transform.up, Input.GetAxis("Mouse X") * degrees);
-            }
-            if (Input.GetAxis("Mouse X") < 0)
-            {
-                transform.RotateAround(transform.position, transform.up, Input.GetAxis("Mouse X") * degrees);
-            }
-            if (Input.GetAxis("Mouse Y") > 0)
-            {
-                transform.RotateAround(transform.position, transform.right, Input.GetAxis("Mouse Y") * -degrees);
-            }
-            if (Input.GetAxis("Mouse Y") < 0)
-            {
-                transform.RotateAround(transform.position, transform.right, Input.GetAxis("Mouse Y") * -degrees);
-            }
-        }
-        if (transform.position.y < 0)
-        {
-            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         }
     }
 
