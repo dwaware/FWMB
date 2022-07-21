@@ -28,14 +28,14 @@ public class GameManager : MonoBehaviour
                     Renderer _renderer = _building.GetComponent<Renderer>();
                     _renderer.material.color = Color.red;
                     _building.name += " Fizz";
-                    StartCoroutine(GrowBuilding(_building, 2f));
+                    //StartCoroutine(GrowBuilding(_building, 2f));
                 }
                 if (_bldgNum % 5 == 0)
                 {
                     Renderer _renderer = _building.GetComponent<Renderer>();
                     _renderer.material.color = Color.green;
                     _building.name += " Buzz";
-                    StartCoroutine(GrowBuilding(_building, 3f));
+                    //StartCoroutine(GrowBuilding(_building, 3f));
                 }
                 if (_bldgNum % 15 == 0)
                 {
