@@ -1,9 +1,12 @@
 # FWMB
- Working Title:  "Fizz With More Buzz"<BR>
- Eventually:  "Fun with Mesh Baking"
+Working Title:  Fizz With More Buzz
  
- I wanted to make a cityscape for agents to navigate through and decided to use fizzbuzz for the building layout.
- 
- ![image](https://user-images.githubusercontent.com/74695555/180098077-adf450cf-5aa8-4c78-97fb-ae308562d1dc.png)
- 
- Next steps are to make the buildings a bit more random in terms of size and placement, make the paths narrower, and experiment with meshes for agents to run around in.
+A cityscape with a camera based collider that can take out buildings.
+
+I decided to use "fizzbuzz" for the building colors.
+
+mouse wheel = forward/reverse throttle
+<BR>
+S = full stop
+<BR>
+A/D = rotate left and right, respectively.
